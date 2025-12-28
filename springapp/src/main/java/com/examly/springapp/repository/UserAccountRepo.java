@@ -1,8 +1,9 @@
 package com.examly.springapp.repository;
 
+import com.examly.springapp.model.UserAccount;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class UserAccountRepo {
-    
+public interface UserAccountRepo extends JpaRepository<UserAccount, Long> {
 }
